@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C1C2CF"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="161dp"
+        android:background="@drawable/weather2"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etLat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter latitude"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.079"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.052" />
+
+            <EditText
+                android:id="@+id/etLong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter longitude"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.079"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etLat"
+                app:layout_constraintVertical_bias="0.029" />
+
+            <Button
+                android:id="@+id/btnGetWeather"
+                android:layout_width="135dp"
+                android:layout_height="37dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#18647A"
+                android:text="Get Weather"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.057"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etLong"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Current Weather"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="3 Cities in Circle" />
+
+            <Button
+                android:id="@+id/btnRefresh"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:background="#18647A"
+                android:text="Refresh"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="#18647A"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvName1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="City 1"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTemp1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="Temp 1"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/iv1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                app:srcCompat="?android:attr/textSelectHandle"
+                tools:srcCompat="?android:attr/textSelectHandle" />
+
+            <TextView
+                android:id="@+id/tvTime1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="Time 1"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="Date 1"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/tvWeather1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="Weather 1"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#18647A"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvName2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="City 2"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTemp2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="Temp 2"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/iv2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                app:srcCompat="?android:attr/textSelectHandle"
+                tools:srcCompat="?android:attr/textSelectHandle" />
+
+            <TextView
+                android:id="@+id/tvTime2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="Time 2"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/tvDate2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="Date 2"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/tvWeather2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="Weather 2"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="#18647A"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvName3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="City 3"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTemp3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="Temp 3"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/iv3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                app:srcCompat="?android:attr/textSelectHandle"
+                tools:srcCompat="?android:attr/textSelectHandle" />
+
+            <TextView
+                android:id="@+id/tvTime3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="Time 3"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/tvDate3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="Date 2"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/tvWeather3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="Weather 3"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
