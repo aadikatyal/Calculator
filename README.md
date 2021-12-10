@@ -8,4 +8,4 @@
 - <a href="https://github.com/aadikatyal/AndroidStudioProjects/tree/sms">SMS Chatbot</a>
 - <a href="https://github.com/aadikatyal/CollegeScope">CollegeScope</a>
 - <a href="https://github.com/aadikatyal/AndroidStudioProjects/tree/cookie">Cookie Clicker Game</a>
-- GPS
+- <a href="https://github.com/aadikatyal/AndroidStudioProjects/tree/gps">GPS</a>
