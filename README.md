@@ -1,1 +1,1 @@
-# Cookie Clicker Game
+# CookieClickerGame
