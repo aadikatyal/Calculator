@@ -2,8 +2,6 @@
 
 #### A compilation of all my Android Studio projects developed in the 2020-2021 school year. Scroll through the branches of this repo to check out the projects below.
 
-Directory:
-
 - Calculator
 - Weather App
 - CollegeScope
