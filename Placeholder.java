@@ -1,7 +1,1 @@
-public class Placeholder
-{
-  public Placeholder()
-  {
-    
-  }
-}
+public class Placeholder{}
