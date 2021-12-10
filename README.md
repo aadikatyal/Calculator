@@ -5,7 +5,7 @@
 - <a href="https://github.com/aadikatyal/AndroidStudioProjects/tree/calculator">Calculator</a>
 - <a href="https://github.com/aadikatyal/AndroidStudioProjects/tree/weather">Weather App</a>
 - <a href="https://github.com/aadikatyal/AndroidStudioProjects/tree/listview">ListView Demo</a>
-- SMS Chatbot
+- <a href="https://github.com/aadikatyal/AndroidStudioProjects/tree/sms">SMS Chatbot</a>
 - CollegeScope
 - Cookie Clicker Game
 - GPS
